@@ -21,7 +21,7 @@ def Play():
         enemies = []
         x = 0
         for count in range(10):
-                enemies.append(Ship(50 * x + 50, 50, 'pic_data/spacey.gif'))
+                enemies.append(Ship(50 * x + 50, 50, 'pic_data/enemy.gif'))
                 x += 1
         quit = 0
         enemyspeed = 3
@@ -74,7 +74,7 @@ def main():
 	backdrop = image.load('pic_data/bdrop.jpg')
 	hero = Ship(20, 400, 'pic_data/hero.png')
 	h_missile = Ship(0, 480, 'pic_data/h_missile.png')
-	e_missile = Ship(0, 480, 'pic_data/e_missile.bmp')
+	e_missile = Ship(0, 480, 'pic_data/e_missile.png')
 	e_missile.render()
 	e_missile.y += 5
 	hero.render()
