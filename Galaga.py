@@ -83,6 +83,5 @@ def main():
   Play()
   kInput()
   display.update()
-  time.delay(5)
   
 main()
