@@ -3,7 +3,7 @@ from pygame import *
 import random
 
 class Ship:
-	def __init__(self, xpos, ypos, pic)
+	def __init__(self, xpos, ypos, pic):
 		self.y = ypos
 		self.bitmap = image.load(pic)
 	def set_position(self, xpos, ypos):
