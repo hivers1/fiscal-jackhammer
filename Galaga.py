@@ -66,19 +66,21 @@ def kInput():
 				h_missile.x = hero.x
 				h_missile.y = hero.y
 
-init()
-screen = display.set_mode((640,480))
-key.set_repeat(1, 1)
-display.set_caption('Spacey in Space')
-backdrop = image.load('pic_data/bdrop.jpg')
-hero = Ship(20, 400, 'pic_data/hero.png')
-h_missile = Ship(0, 480, 'pic_data/h_missile.png')
-e_missile = Ship(0, 480, 'pic_data/e_missile.bmp')
-e_missile.render()
-e_missile.y += 5
-hero.render()
-Play()
-kInput()
-display.update()
-time.delay(5)
-
+def main():
+	init()
+	screen = display.set_mode((640,480))
+	key.set_repeat(1, 1)
+	display.set_caption('Spacey in Space')
+	backdrop = image.load('pic_data/bdrop.jpg')
+	hero = Ship(20, 400, 'pic_data/hero.png')
+	h_missile = Ship(0, 480, 'pic_data/h_missile.png')
+	e_missile = Ship(0, 480, 'pic_data/e_missile.bmp')
+	e_missile.render()
+	e_missile.y += 5
+	hero.render()
+	Play()
+	kInput()
+	display.update()
+	time.delay(5)
+	
+main()
