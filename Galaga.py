@@ -24,7 +24,7 @@ def Play():
         enemies = []
         x = 0
         for count in range(10):
-                enemies.append(Ship(50 * x + 50, 50, pygame.image.load('pic_data/enemy.gif')))
+                enemies.append(Ship(50 * x + 50, 50, pygame.image.load('pic_data/spacey.gif')))
                 x += 1
         quit = 0
         enemyspeed = 3
